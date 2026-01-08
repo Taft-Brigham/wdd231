@@ -1,6 +1,6 @@
-# WDD 231 – Frontend Web Development II
+# WDD 231 – Frontend Web Development I
 
-This repository contains coursework, assignments, and projects for **WDD 231: Frontend Web Development II** at **BYU-Pathway Worldwide**.
+This repository contains coursework, assignments, and projects for **WDD 231: Frontend Web Development I** at **BYU-Pathway Worldwide**.
 
 The purpose of this repository is to document my learning progress and demonstrate practical application of intermediate frontend web development concepts using modern web technologies.
 
@@ -53,7 +53,7 @@ Where required, live project demos are deployed using GitHub Pages.
 
 **Ezra Taft Brigham Essien**  
 BYU-Pathway Worldwide  
-WDD 231 – Frontend Web Development II  
+WDD 231 – Frontend Web Development I  
 **Term:** 2026 Winter Term 1
 
 ---
