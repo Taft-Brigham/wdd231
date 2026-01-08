@@ -45,7 +45,7 @@ Each folder contains the corresponding weekly assignment or project with support
 
 Where required, live project demos are deployed using GitHub Pages.
 
-- **Demo Link:** _To be added_
+- **Demo Link:** [My Progress](https://taft-brigham.github.io/wdd231/)
 
 ---
 
