@@ -1,17 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Ezra Taft Brigham Essien">
-    <meta name="description" content="WDD 231: Web Frontend Development I">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css ">
+    <meta name="description" content="WDD 231 Course Home Page - Ezra Taft Brigham Essien from Accra, Ghana">
+    <meta name="author" content="Brigham">
+    <title>WDD 231 | Ezra Taft Brigham Essien</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/course.js"></script>
 </head>
+
 <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="header-content">
+            <img src="images/taft-brigham-logo.svg" alt="logo of taft-brigham" class="logo">
+            <h1 class="wordmark">taft-brigham</h1>
+
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="#">Final</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="home">Home</h1>
+
+        <div class="about-profile-container">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hi! I'm Ezra Taft Brigham Essien from Kumasi, Ashanti, Ghana (currently based in Accra for studies). I'm
+                    passionate about web development and excited to build responsive, accessible, and user-friendly websites.
+                    Living in Ghana gives me a unique perspective on creating technology that serves diverse communities and
+                    solves real-world problems. Through WDD 231 at BYU-Pathway, I'm gaining hands-on skills in frontend
+                    development and look forward to applying them in meaningful projects.</p>
+            </section>
+        
+            <section class="profile">
+                <h2>A Picture of Me</h2>
+                <picture>
+                    
+                    <source media="(max-width: 767px)" srcset="images/profile-small.jpg 1x, images/profile-small.jpg 2x">
+                    
+                    <source media="(min-width: 768px)" srcset="images/profile-large.jpg 1x, images/profile-large.jpg 2x">
+                    
+                    <img src="images/profile-large.jpg" alt="Ezra Taft Brigham Essien smiling in professional casual attire"
+                        class="profile-img" loading="lazy" width="400" height="500">
+                </picture>
+            </section>
+        </div>
+
+       
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+            </div>
+            <div id="course-list" class="course-grid"></div>
+            <p class="total-credits">Total Credits: <span id="total-credits">0</span></p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Taft-Brigham" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        
+            <a href="| https://www.linkedin.com/in/ezra essien 7733b4263/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:taftbrigham@gmail.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+
+
+        <p>© <span id="currentyear"></span> Ezra Taft Brigham Essien | Accra, Ghana</p>
+        <p id="lastModified">Last modified: </p>
+    </footer>
 </body>
+
 </html>
