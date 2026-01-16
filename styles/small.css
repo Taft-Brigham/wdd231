@@ -42,7 +42,7 @@ header {
 
 .logo {
     width: 50px;
-    height: auto;
+    height: 50px;
 }
 
 .home {
@@ -108,6 +108,11 @@ main section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.para {
+    margin-bottom: 1rem ;
+    line-height: 1.6;
+}
+
 .profile {
     background: white;
     padding: 1rem;
@@ -116,8 +121,7 @@ main section {
     text-align: center;
 }
 
-.profile h2 {
-    font-size: 1.4rem;
+ h2 {
     margin-bottom: 1rem;
 }
 
@@ -226,37 +230,40 @@ footer {
 }
 
 .social-links {
+    align-items: center;
     gap: 20px;
-    font-size: 24px;
+    
 }
 
 .social-links a {
-    color: #0f0f0f;
-    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #0077b5;
-}
-
-.social-links a:nth-child(1):hover {
-    color: #ece6e6;
-}
-
-.social-links a:nth-child(2):hover {
-    color: #0077b5;
-}
-
-
-.social-links a:nth-child(3):hover {
-    color: #d44638;
-}
-
-
-
-.social-links i {
-    pointer-events: none;
+.social-links a img {
     width: 40px;
-    margin: 0 0.8rem;
+    height: 40px;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.social-links a:nth-child(1):hover img {
+    filter: brightness(0) saturate(100%) invert(100%);
+    transform: scale(1.2);
+}
+
+.social-links a:nth-child(2):hover img {
+    filter: invert(34%) sepia(82%) saturate(2871%) hue-rotate(192deg) brightness(96%) contrast(97%);
+    transform: scale(1.2);
+    
+}
+
+.social-links a:nth-child(3):hover img {
+    filter: invert(25%) sepia(95%) saturate(5856%) hue-rotate(356deg) brightness(94%) contrast(105%);
+    transform: scale(1.2);
+    
 }
