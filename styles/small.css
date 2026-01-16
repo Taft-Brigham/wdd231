@@ -176,7 +176,7 @@ main section {
 
 .credits {
     font-size: 1.1rem;
-    color: #555;
+    color: #272626;
 }
 
  .total-credits {
@@ -185,7 +185,7 @@ main section {
 
 .tech {
     font-size: 0.95rem;
-    color: #777;
+    color: #272525;
     margin-top: 0.6rem;
 }
 
@@ -245,7 +245,7 @@ footer {
 
 .social-links a img {
     width: 40px;
-    height: 40px;
+    height: 40;
     display: block;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
