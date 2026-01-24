@@ -239,6 +239,55 @@ h1 {
     border: 0;
 }
 
+
+
+
+.member-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+    will-change: transform;
+}
+
+
+.member-card:hover,
+.member-card:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .16);
+    border-color: rgba(11, 61, 46, 0.35);
+   
+}
+
+
+.members.grid .member-card img {
+    transition: transform 180ms ease;
+}
+
+.members.grid .member-card:hover img,
+.members.grid .member-card:focus-within img {
+    transform: scale(1.03);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .member-card,
+    .members.grid .member-card img {
+        transition: none;
+    }
+
+    .member-card:hover,
+    .member-card:focus-within {
+        transform: none;
+    }
+}
+
+
 .members.list .member-card:nth-child(even) {
     background: rgba(11, 61, 46, 0.06);
    
