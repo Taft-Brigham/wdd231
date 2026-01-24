@@ -1,0 +1,211 @@
+1) Site Name
+Accra Chamber of Commerce
+Optional short name/brand: Accra Chamber
+
+Proposed domain (example): accrachamber.org (or accra-chamber.com)
+
+2) Site Purpose
+The Accra Chamber of Commerce website supports local businesses by:
+
+Promoting member businesses and services through a public directory
+Providing networking and business-development events
+Helping new/expanding businesses find resources (permits, agencies, training, funding)
+Encouraging investment and economic growth in Accra
+
+
+3) Target Audience
+Primary users
+
+Small and medium business owners in Accra
+Entrepreneurs/startups seeking support and visibility
+Corporate organizations looking for partnerships and suppliers
+Secondary users
+
+Visitors/investors researching Accra’s business climate
+Government/NGO partners looking to collaborate
+Residents searching for local businesses and events
+4) Scenarios (User Questions)
+“How do I join the Accra Chamber, and what are the membership levels and fees?”
+“What business networking events or workshops are happening this month in Accra?”
+“Where can I find trusted local suppliers (printing, logistics, legal, accounting) in Accra?”
+“Which businesses are verified chamber members, and how do I contact them?”
+“What resources exist for registering a business in Ghana and operating in Accra?”
+
+
+5) Site Map (Pages)
+Home
+Hero + CTA (Join / Directory)
+Upcoming events
+Weather (optional course requirement)
+Member spotlights
+Discover (About Accra)
+Demographics / business environment
+Local highlights (markets, districts, business hubs)
+Stats + photo gallery
+Directory
+Member list (grid/list toggle)
+Filters (category, membership level)
+Join
+Membership benefits
+Membership tiers
+Application form
+Contact
+Contact form + map + office hours
+Social links
+(If you want exactly 4 pages, you can merge Contact into Join or Home; but the above is a solid chamber structure.)
+
+
+
+6) Branding (Ghana Theme)
+Inspired by the Ghana flag: red, gold, green, and black—adapted slightly for accessibility and modern UI.
+
+Logo Concept (text description)
+A simple “A” icon shape (for Accra) with subtle Ghana color bands (red/gold/green)
+A small star motif (Ghana’s black star) as a mark of credibility
+Wordmark: “Accra Chamber of Commerce”
+
+
+7) Color Schema (Accessible Ghana Palette)
+Core Palette (Hex)
+These are theme-consistent and chosen for readable UI:
+
+Primary (Forest Green): #0B3D2E
+Secondary (Gold): #F2C400
+Accent (Deep Red): #B10F1C
+Neutral Dark (Charcoal): #111111
+Neutral Light (Warm Off-White): #F7F5EF
+Muted Border/Surface: #E6E1D6
+Recommended Usage (to avoid “color mismatch” / low contrast)
+Use these pairings for safe readability:
+
+UI Element	Background	Text Color	Notes
+Body text area	#F7F5EF	#111111	Very high contrast (safe default)
+Header / footer	#0B3D2E	#FFFFFF	Strong readable branding
+Primary button	#0B3D2E	#FFFFFF	CTA button
+Primary button hover	#06261C	#FFFFFF	Darker hover
+Secondary button	#F2C400	#111111	Gold with dark text (avoid white text here)
+Accent banner	#B10F1C	#FFFFFF	Good for alerts/important CTA sections
+Cards	#FFFFFF	#111111	Clean content blocks
+Links (on light bg)	#0B3D2E	n/a	Underline for accessibility
+Link hover	#B10F1C	n/a	Use underline + color change
+Accessibility rule of thumb:
+
+On gold backgrounds, use dark text (#111111), not white.
+On green/red/dark backgrounds, use white text.
+CSS Variables (copy/paste)
+CSS
+
+:root{
+  /* Ghana-inspired accessible palette */
+  --color-primary: #0B3D2E;     /* green */
+  --color-secondary: #F2C400;   /* gold */
+  --color-accent: #B10F1C;      /* red */
+  --color-dark: #111111;        /* charcoal/black */
+  --color-light: #F7F5EF;       /* warm off-white */
+  --color-border: #E6E1D6;
+
+  /* text defaults */
+  --text-on-light: #111111;
+  --text-on-dark: #FFFFFF;
+
+  /* common surfaces */
+  --surface: #FFFFFF;
+}
+
+
+8) Typography (Fonts by Section)
+Choose clean, professional fonts with easy readability.
+
+Recommended Google Fonts
+Headings (H1–H3): Montserrat (bold, modern)
+Body / paragraphs: Source Sans 3 (very readable)
+Accent (optional for quotes/highlights): Merriweather (classic, trusted tone)
+Font stacks + usage:
+
+CSS
+
+:root{
+  --font-heading: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-accent: "Merriweather", Georgia, "Times New Roman", serif;
+}
+
+body{
+  font-family: var(--font-body);
+  color: var(--text-on-light);
+  background: var(--color-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3{
+  font-family: var(--font-heading);
+  letter-spacing: 0.2px;
+}
+
+.site-tagline,
+.highlight-quote{
+  font-family: var(--font-accent);
+}
+Font Sizes (simple scale)
+Body: 16–18px
+H1: 2.0–2.5rem
+H2: 1.5–2.0rem
+H3: 1.25–1.5rem
+
+
+9) Design Notes (UI Components)
+Navigation: green background (--color-primary) with white text
+Buttons: primary green; secondary gold (dark text)
+Cards: white surface with subtle border --color-border
+Icons: charcoal or green; use gold sparingly for emphasis
+
+
+10) Content Plan (What goes on each page)
+Home
+Hero: “Connecting Accra Businesses to Opportunity”
+CTA buttons: Join the Chamber / View Directory
+Upcoming events (3)
+Member spotlight (2–3)
+Quick stats (members count, events per month)
+Weather widget (if required by course)
+Discover
+About Accra’s business environment
+District highlights (Osu, Accra Central, East Legon, Airport, etc.)
+Gallery (local commerce visuals)
+Key facts + map
+Directory
+Member cards: Name, category, address, phone, website, membership level
+Filter/sort by category/level
+Grid/list toggle
+Join
+Membership tiers (NP, Bronze, Silver, Gold)
+Benefits list
+Application form (name, business name, title, email, phone, category, description, website, membership level)
+Thank-you page after submission
+Contact
+Contact info and hours
+Contact form
+Map embed (or static location section)
+Social links
+
+
+11) Wireframes (Text Description)
+Mobile (Home)
+Header (logo + hamburger)
+Hero (headline + short text + CTA buttons)
+Events (stacked cards)
+Spotlights (stacked)
+Footer (contact + socials)
+Desktop (Home)
+Header (logo left, nav right)
+Hero (two-column: text left, image right)
+Events (3-column cards)
+Spotlights (2–3 columns)
+Footer (3 columns: contact, quick links, newsletter)
+
+
+12) Images & Media (Plan)
+Hero image: Accra skyline / business district
+Discover gallery: Makola Market, Independence Square, business hubs
+Member logos (if provided)
+Icons: phone, location, calendar, briefcase
