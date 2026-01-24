@@ -185,9 +185,8 @@ h1 {
 .members.grid .member-card img {
     width: 100%;
     max-width: 220px;
-    height: 120px;
-    object-fit: contain;
-   
+    height: 180px;
+    object-fit: cover;
     border-radius: 10px;
     border: 1px solid var(--border);
     background: #fff;
