@@ -191,6 +191,7 @@ h1 {
     border: 1px solid var(--border);
     background: #fff;
     margin: 0 auto .75rem;
+    transition: transform 180ms ease;
 }
 
 .member-name {
@@ -263,10 +264,6 @@ h1 {
    
 }
 
-
-.members.grid .member-card img {
-    transition: transform 180ms ease;
-}
 
 .members.grid .member-card:hover img,
 .members.grid .member-card:focus-within img {
