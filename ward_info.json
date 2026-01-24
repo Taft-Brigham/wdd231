@@ -1,0 +1,28 @@
+{
+  "familyName": "Mensah",
+  "dateMovedIntoWard": "2024-11-15",
+  "numberOfPeople": 4,
+  "visitedByBishopric": true,
+  "familyMembers": [
+    {
+      "name": "Kwame Mensah",
+      "gender": "Male",
+      "birthdate": "1985-03-22"
+    },
+    {
+      "name": "Ama Mensah",
+      "gender": "Female",
+      "birthdate": "1988-07-10"
+    },
+    {
+      "name": "Kojo Mensah",
+      "gender": "Male",
+      "birthdate": "2012-01-05"
+    },
+    {
+      "name": "Akosua Mensah",
+      "gender": "Female",
+      "birthdate": "2016-09-18"
+    }
+  ]
+}
