@@ -1,34 +1,51 @@
 @media (min-width: 800px) {
 
-    .menu-btn {
+
+
+    .hamburger {
         display: none;
+    }
+
+    .nav-menu {
+        display: block !important;
+       
+        width: auto;
+        margin-left: auto;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        padding: .55rem .8rem;
     }
 
     .header-inner {
         flex-wrap: nowrap;
     }
 
-        .logo {
-            width: 60px;
-            height: auto;
-        }
-
-    .primary-nav {
-        display: flex;
-        width: auto;
-        flex-direction: row;
-        margin-left: auto;
-        padding-top: 0;
+    .logo {
+        width: 60px;
+        height: auto;
     }
+
 
     .members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* LIST: four aligned columns like the screenshot */
+   
     .members.list .member-card {
         grid-template-columns: 1.2fr 2fr 1fr 2fr;
-        /* name | address | phone | link */
+       
         align-items: center;
         column-gap: 1rem;
     }
@@ -38,7 +55,7 @@
     .members.list .member-phone,
     .members.list .member-link {
         margin: 0;
-        /* tight row look */
+       
     }
 
     .members.list .member-link {

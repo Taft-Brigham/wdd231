@@ -30,11 +30,11 @@
 
   
     <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/large.css" />
 
     <script defer src="scripts/menu.js" ></script>
     <script defer src="scripts/directory.js" ></script>
-    <script defer src="scripts/getdates.js" ></script>
+    <script defer src="scripts/getdate.js" ></script>
 </head>
 
 <body>
@@ -50,15 +50,18 @@
                 </span>
             </a>
 
-            <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+            <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="primaryNav">
                 ☰
             </button>
-
-            <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="discover.html">Discover</a>
-                <a class="nav-link" href="directory.html" aria-current="page">Directory</a>
-                <a class="nav-link" href="join.html">Join</a>
+            
+            <nav id="primaryNav" class="nav-menu" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
             </nav>
         </div>
     </header>
