@@ -25,7 +25,7 @@
       "address": "Airport City, Accra",
       "phone": "+233 20 808 9090",
       "website": "https://example.com/airport-logistics",
-      "image": "airport-logistics.webp",
+      "image": "airpot-city.webp",
       "membershipLevel": 3,
       "category": "Logistics",
       "tagline": "Fast, accountable deliveries across Accra."
@@ -35,7 +35,7 @@
       "address": "Labadi Rd, Accra",
       "phone": "+233 30 222 3344",
       "website": "https://example.com/labadi-hospitality",
-      "image": "labadi-hospitality.webp",
+      "image": "labadi-beach.webp",
       "membershipLevel": 2,
       "category": "Hospitality",
       "tagline": "Hosting business meetings and visitors with care."
@@ -45,7 +45,7 @@
       "address": "East Legon, Accra",
       "phone": "+233 27 111 7788",
       "website": "https://example.com/east-legon-legal",
-      "image": "east-legon-legal.webp",
+      "image": "east-legon.webp",
       "membershipLevel": 1,
       "category": "Legal Services",
       "tagline": "Practical legal support for SMEs."
@@ -55,7 +55,7 @@
       "address": "Ring Rd Central, Accra",
       "phone": "+233 54 123 4567",
       "website": "https://example.com/accra-tech-hub",
-      "image": "accra-tech-hub.webp",
+      "image": "accra-tech.webp",
       "membershipLevel": 3,
       "category": "Technology",
       "tagline": "Innovating solutions for Ghanaian businesses."
@@ -65,7 +65,7 @@
       "address": "Kantamanto, Accra",
       "phone": "+233 55 765 4321",
       "website": "https://example.com/kantamanto-textiles",
-      "image": "kantamanto-textiles.webp",
+      "image": "kanta-textiles.webp",
       "membershipLevel": 1,
       "category": "Manufacturing",
       "tagline": "Textile sourcing and production support."
@@ -75,7 +75,7 @@
       "address": "Osu Central, Accra",
       "phone": "+233 50 987 6543",
       "website": "https://example.com/osu-financial",
-      "image": "osu-financial.webp",
+      "image": "osu-finance.webp",
       "membershipLevel": 2,
       "category": "Finance",
       "tagline": "Empowering SMEs with smart financial solutions."
@@ -85,7 +85,7 @@
       "address": "Jamestown, Accra",
       "phone": "+233 24 888 1122",
       "website": "https://example.com/jamestown-tours",
-      "image": "jamestown-tours.webp",
+      "image": "jamestown.webp",
       "membershipLevel": 1,
       "category": "Tourism",
       "tagline": "Showcasing Accra’s rich heritage and history."

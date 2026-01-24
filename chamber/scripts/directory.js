@@ -16,7 +16,7 @@ function renderMembers(companies) {
     card.className = "member-card";
 
     const img = document.createElement("img");
-    img.src = `images/members/${c.image}`;
+    img.src = `images/${c.image}`;
     img.alt = `${c.name} logo`;
     img.loading = "lazy";
     img.width = 260;
