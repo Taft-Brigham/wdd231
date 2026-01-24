@@ -1,0 +1,284 @@
+:root {
+   
+    --primary: #0B3D2E;
+   
+    --secondary: #F2C400;
+   
+    --accent: #B10F1C;
+   
+
+    --dark: #111111;
+    --light: #F7F5EF;
+    --border: #E6E1D6;
+    --surface: #FFFFFF;
+
+    --text-on-light: #111111;
+    --text-on-dark: #FFFFFF;
+
+    --font-heading: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, .08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background: var(--light);
+    color: var(--text-on-light);
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: var(--accent);
+    color: var(--text-on-dark);
+    padding: .6rem 1rem;
+    z-index: 999;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.site-header {
+    background: var(--primary);
+    color: var(--text-on-dark);
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: .8rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    text-decoration: none;
+    color: var(--text-on-dark);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-mark {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: var(--secondary);
+    color: var(--dark);
+   
+    font-weight: 700;
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.brand-sub {
+    font-size: .95rem;
+    opacity: .95;
+}
+
+.menu-btn {
+    margin-left: auto;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .45);
+    color: var(--text-on-dark);
+    padding: .5rem .7rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.primary-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: .25rem;
+    padding-top: .4rem;
+}
+
+.primary-nav.open {
+    display: flex;
+}
+
+.nav-link {
+    color: var(--text-on-dark);
+    text-decoration: none;
+    padding: .55rem .65rem;
+    border-radius: 10px;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    background: rgba(255, 255, 255, .12);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    margin: .2rem 0 .4rem;
+}
+
+.lead {
+    margin-top: 0;
+}
+
+.view-controls {
+    display: flex;
+    gap: .6rem;
+    margin: 1rem 0;
+}
+
+.view-btn {
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    padding: .55rem .9rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-btn.active {
+    background: var(--primary);
+    color: var(--text-on-dark);
+}
+
+
+/* Directory container */
+.members {
+    display: grid;
+    gap: .9rem;
+}
+
+/* -------- GRID VIEW (cards) -------- */
+.members.grid {
+    grid-template-columns: 1fr;
+}
+
+.members.grid .member-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+}
+
+.members.grid .member-card img {
+    width: 100%;
+    max-width: 220px;
+    height: 120px;
+    object-fit: contain;
+    /* makes logos look like the sample */
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #fff;
+    margin: 0 auto .75rem;
+}
+
+.member-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    margin: .2rem 0 .4rem;
+}
+
+.member-address,
+.member-phone {
+    margin: .15rem 0;
+    font-size: .95rem;
+}
+
+.member-link {
+    display: inline-block;
+    margin-top: .35rem;
+    color: var(--primary);
+    word-break: break-word;
+}
+
+.member-link:hover {
+    color: var(--accent);
+}
+
+
+/* -------- LIST VIEW (mobile stacks) -------- */
+.members.list {
+    grid-template-columns: 1fr;
+    gap: 0;
+    /* zebra works better with no gaps */
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    /* keeps stripes clean at edges */
+    background: var(--surface);
+}
+
+.members.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* stacked on small screens */
+    gap: .25rem;
+    padding: .9rem 1rem;
+    box-shadow: none;
+    border: 0;
+}
+
+.members.list .member-card:nth-child(even) {
+    background: rgba(11, 61, 46, 0.06);
+    /* subtle green stripe */
+}
+
+.members.list .member-card img {
+    display: none;
+    /* like the sample list view */
+}
+
+.members.list .member-link {
+    margin-top: 0;
+}
+
+
+.site-footer {
+    margin-top: 2rem;
+    background: var(--primary);
+    color: var(--text-on-dark);
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-title {
+    font-family: var(--font-heading);
+    margin: 0 0 .4rem;
+    font-size: 1.1rem;
+}

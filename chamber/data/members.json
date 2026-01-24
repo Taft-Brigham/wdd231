@@ -1,0 +1,104 @@
+{
+  "companies": [
+    {
+      "name": "Makola Trade Supplies",
+      "address": "Makola Market Rd, Accra",
+      "phone": "+233 30 111 2233",
+      "website": "https://example.com/makola-trade",
+      "image": "makola-trade.webp",
+      "membershipLevel": 2,
+      "category": "Retail & Wholesale",
+      "tagline": "Reliable supplies for growing businesses."
+    },
+    {
+      "name": "Osu Creative Studio",
+      "address": "Oxford St, Osu, Accra",
+      "phone": "+233 24 555 0101",
+      "website": "https://example.com/osu-creative",
+      "image": "osu-creative.webp",
+      "membershipLevel": 3,
+      "category": "Branding & Design",
+      "tagline": "Design that helps Accra businesses stand out."
+    },
+    {
+      "name": "Airport City Logistics",
+      "address": "Airport City, Accra",
+      "phone": "+233 20 808 9090",
+      "website": "https://example.com/airport-logistics",
+      "image": "airport-logistics.webp",
+      "membershipLevel": 3,
+      "category": "Logistics",
+      "tagline": "Fast, accountable deliveries across Accra."
+    },
+    {
+      "name": "Labadi Beach Hospitality Group",
+      "address": "Labadi Rd, Accra",
+      "phone": "+233 30 222 3344",
+      "website": "https://example.com/labadi-hospitality",
+      "image": "labadi-hospitality.webp",
+      "membershipLevel": 2,
+      "category": "Hospitality",
+      "tagline": "Hosting business meetings and visitors with care."
+    },
+    {
+      "name": "East Legon Legal & Advisory",
+      "address": "East Legon, Accra",
+      "phone": "+233 27 111 7788",
+      "website": "https://example.com/east-legon-legal",
+      "image": "east-legon-legal.webp",
+      "membershipLevel": 1,
+      "category": "Legal Services",
+      "tagline": "Practical legal support for SMEs."
+    },
+    {
+      "name": "Accra Tech Hub",
+      "address": "Ring Rd Central, Accra",
+      "phone": "+233 54 123 4567",
+      "website": "https://example.com/accra-tech-hub",
+      "image": "accra-tech-hub.webp",
+      "membershipLevel": 3,
+      "category": "Technology",
+      "tagline": "Innovating solutions for Ghanaian businesses."
+    },
+    {
+      "name": "Kantamanto Textiles Co.",
+      "address": "Kantamanto, Accra",
+      "phone": "+233 55 765 4321",
+      "website": "https://example.com/kantamanto-textiles",
+      "image": "kantamanto-textiles.webp",
+      "membershipLevel": 1,
+      "category": "Manufacturing",
+      "tagline": "Textile sourcing and production support."
+    },
+    {
+      "name": "Osu Financial Services",
+      "address": "Osu Central, Accra",
+      "phone": "+233 50 987 6543",
+      "website": "https://example.com/osu-financial",
+      "image": "osu-financial.webp",
+      "membershipLevel": 2,
+      "category": "Finance",
+      "tagline": "Empowering SMEs with smart financial solutions."
+    },
+    {
+      "name": "Jamestown Cultural Tours",
+      "address": "Jamestown, Accra",
+      "phone": "+233 24 888 1122",
+      "website": "https://example.com/jamestown-tours",
+      "image": "jamestown-tours.webp",
+      "membershipLevel": 1,
+      "category": "Tourism",
+      "tagline": "Showcasing Accra’s rich heritage and history."
+    },
+    {
+      "name": "Spintex IT Solutions",
+      "address": "Spintex Rd, Accra",
+      "phone": "+233 20 456 7890",
+      "website": "https://example.com/spintex-it",
+      "image": "spintex-it.webp",
+      "membershipLevel": 3,
+      "category": "Technology",
+      "tagline": "Reliable IT infrastructure and support for businesses."
+    }
+  ]
+}
