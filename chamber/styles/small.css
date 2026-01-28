@@ -224,6 +224,10 @@ h1 {
     align-items: center;
 }
 
+.weather-line {
+    margin: .15rem 0;
+    font-size: .95rem;
+}
 .weather-temp {
     margin: 0;
     font-weight: 800;
