@@ -143,7 +143,7 @@ h1 {
     margin: .2rem 0 .4rem;
 }
 
-/* ---------- HOME PAGE LAYOUT ---------- */
+/* ---------- Home Page Styles Start ---------- */
 
 .page-title {
     font-family: var(--font-heading);
@@ -183,14 +183,14 @@ h1 {
     filter: brightness(.95);
 }
 
-/* panels container (mobile stacks) */
+
 .home-panels {
     display: grid;
     gap: 1rem;
     margin-top: .8rem;
 }
 
-/* common panel style */
+
 .panel {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -250,7 +250,7 @@ h1 {
     border-bottom: none;
 }
 
-/* Spotlights */
+
 .spotlights {
     margin-top: 1rem;
 }
@@ -494,10 +494,62 @@ h1 {
     padding: 1rem;
     display: grid;
     gap: 1rem;
+    text-align: left;
 }
 
 .footer-title {
     font-family: var(--font-heading);
     margin: 0 0 .4rem;
     font-size: 1.1rem;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: .5rem 0;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+.social-links a img {
+    width: 34px;
+    height: 34px;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links a:nth-child(1):hover img {
+    filter: brightness(0) saturate(100%) invert(100%);
+    transform: scale(1.2);
+}
+
+.social-links a:nth-child(2):hover img {
+    filter: invert(34%) sepia(82%) saturate(2871%) hue-rotate(192deg) brightness(96%) contrast(97%);
+    transform: scale(1.2);
+}
+
+.social-links a:nth-child(3):hover img {
+    filter: invert(25%) sepia(95%) saturate(5856%) hue-rotate(356deg) brightness(94%) contrast(105%);
+    transform: scale(1.2);
+}
+
+.dev-info {
+    text-align: left;
 }
