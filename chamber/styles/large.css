@@ -28,6 +28,11 @@
         padding: .55rem .8rem;
     }
 
+    .nav-menu a.active,
+    .nav-menu a[aria-current="page"] {
+        border-left: none;
+        border-bottom: 3px solid var(--secondary);
+    }
     .header-inner {
         flex-wrap: nowrap;
     }
