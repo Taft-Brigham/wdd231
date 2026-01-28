@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = nav.querySelectorAll("a");
   if (!links.length) return;
 
-  // get current filename (e.g., "directory.html")
   let currentPage = window.location.pathname.split("/").pop();
 
-  // if URL ends with "/" treat as index.html
+  
   if (currentPage === "") currentPage = "index.html";
 
   links.forEach((link) => {

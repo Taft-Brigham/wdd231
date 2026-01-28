@@ -63,6 +63,17 @@
        
     }
 
+    /* HOME: Events | Current Weather | Forecast in one row */
+    .home-panels {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: start;
+    }
+
+    /* HOME: Spotlights row */
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .members.list .member-link {
         justify-self: start;
     }

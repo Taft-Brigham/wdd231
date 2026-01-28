@@ -5,20 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Business Directory | Accra Chamber of Commerce</title>
-    <meta name="description"
-        content="Explore member businesses of the Accra Chamber of Commerce. Filter your view using grid or list layouts.">
+    <title>Accra Chamber of Commerce | Home</title>
+    <meta name="description" content="Accra Chamber of Commerce—events, business resources, member spotlights, and current local weather." />
     <meta name="author" content="Ezra Taft Brigham Essien">
 
 
     <link rel="icon" href="favicon.ico" />
 
 
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:description"
-        content="Supporting local businesses and community growth by connecting entrepreneurs, services, and opportunities within our Chamber.">
+    <meta property="og:title" content="Accra Chamber of Commerce">
+    <meta property="og:description" content="Connecting Accra businesses to opportunity through events, resources, and partnerships." />
     <meta property="og:image" content="https://taft-brigham.github.io/wdd231/chamber/images/chamber-logo.webp">
-    <meta property="og:url" content="https://taft-brigham.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://taft-brigham.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
 
@@ -39,6 +37,9 @@
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/wayfinder.js"></script>
     <script defer src="scripts/getdate.js"></script>
+
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
 </head>
 
 <body>
@@ -71,7 +72,59 @@
     </header>
 
     <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/independence-arch.webp" type="image/webp">
+                <img src="images/independence-arch.webp" alt="Independence Arch" loading="lazy">
+            </picture>
         
+            <a class="hero-cta" href="join.html">Join the Chamber</a>
+        </section>
+        
+        <h1 class="page-title">Home</h1>
+        
+        <!-- TOP PANELS: Events | Current Weather | Forecast -->
+        <section class="home-panels" aria-label="Home panels">
+            <section class="panel events" aria-label="Events">
+                <h2 class="panel-title">Events</h2>
+                <div class="panel-body">
+                    <ul class="events-list">
+                        <li><strong>SME Networking Night</strong><br><span>Venue: Osu • Date: TBD</span></li>
+                        <li><strong>Business Growth Workshop</strong><br><span>Venue: Accra Central • Date: TBD</span></li>
+                        <li><strong>Trade & Investment Briefing</strong><br><span>Venue: Airport City • Date: TBD</span></li>
+                    </ul>
+                </div>
+            </section>
+        
+            <section class="panel current-weather" aria-label="Current Weather">
+                <h2 class="panel-title">Current Weather</h2>
+                <div class="panel-body weather-box">
+                    <div class="weather-left">
+                        <img id="weather-icon" src="" alt="" width="70" height="70">
+                    </div>
+                    <div class="weather-right">
+                        <p class="weather-temp"><span id="current-temp"></span></p>
+                        <p class="weather-desc" id="weather-desc"></p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="panel forecast" aria-label="3 Day Forecast">
+                <h2 class="panel-title">Weather Forecast</h2>
+                <div class="panel-body">
+                    <ul id="forecast" class="forecast-list"></ul>
+                </div>
+            </section>
+        </section>
+        
+        <!-- SPOTLIGHTS -->
+        <section class="spotlights" aria-label="Member spotlights">
+            <div class="spotlight-grid" id="spotlightGrid">
+                <!-- JS inserts 2 or 3 spotlight cards here -->
+            </div>
+        </section>
+        </main>
     </main>
 
     <footer class="site-footer">

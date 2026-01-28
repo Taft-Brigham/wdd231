@@ -143,6 +143,181 @@ h1 {
     margin: .2rem 0 .4rem;
 }
 
+/* ---------- HOME PAGE LAYOUT ---------- */
+
+.page-title {
+    font-family: var(--font-heading);
+    margin: 1rem 0 .6rem;
+}
+
+.hero {
+    position: relative;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: #fff;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-cta {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: var(--secondary);
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 800;
+    padding: .65rem 1rem;
+    border-radius: 999px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, .18);
+}
+
+.hero-cta:hover,
+.hero-cta:focus-visible {
+    filter: brightness(.95);
+}
+
+/* panels container (mobile stacks) */
+.home-panels {
+    display: grid;
+    gap: 1rem;
+    margin-top: .8rem;
+}
+
+/* common panel style */
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.panel-title {
+    margin: 0;
+    padding: .55rem .8rem;
+    background: var(--primary);
+    color: var(--text-on-dark);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+.panel-body {
+    padding: .85rem;
+}
+
+.events-list {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.weather-box {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: .6rem;
+    align-items: center;
+}
+
+.weather-temp {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.weather-desc {
+    margin: .15rem 0 0;
+    text-transform: capitalize;
+}
+
+.forecast-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-list li {
+    padding: .35rem 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+.forecast-list li:last-child {
+    border-bottom: none;
+}
+
+/* Spotlights */
+.spotlights {
+    margin-top: 1rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.spotlight-card .spotlight-head {
+    background: var(--primary);
+    color: var(--text-on-dark);
+    padding: .55rem .8rem;
+}
+
+.spotlight-card .spotlight-head h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+.spotlight-card .spotlight-head p {
+    margin: .15rem 0 0;
+    opacity: .95;
+    font-size: .9rem;
+}
+
+.spotlight-card .spotlight-body {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: .8rem;
+    padding: .85rem;
+    align-items: center;
+}
+
+.spotlight-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    display: block;
+}
+
+.spotlight-card .spotlight-body p {
+    margin: .15rem 0;
+    font-size: .95rem;
+}
+
+.spotlight-card a {
+    color: var(--primary);
+    word-break: break-word;
+}
+
+.spotlight-card a:hover {
+    color: var(--accent);
+}
+
+/* ------------Home Page Styles End -----------*/
 .lead {
     margin-top: 0;
 }
