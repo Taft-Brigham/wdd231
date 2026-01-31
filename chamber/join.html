@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Accra Chamber of Commerce | Join</title>
+    <meta name="description" content="Apply to join the Accra Chamber of Commerce. Choose a membership level and submit your application." />
+    <meta name="author" content="Ezra Taft Brigham Essien">
+
+
+    <link rel="icon" href="favicon.ico" />
+
+
+    <meta property="og:title" content="Join the Accra Chamber of Commerce">
+    <meta property="og:description" content="Apply to become a member of the Accra Chamber of Commerce. Choose a membership level and submit your application.">
+    <meta property="og:image" content="https://taft-brigham.github.io/wdd231/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://taft-brigham.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/wayfinder.js"></script>
+    <script defer src="scripts/getdate.js"></script>
+
+    <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="directory.html" aria-label="Accra Chamber of Commerce directory">
+                <img src="images/logo-1.png" alt="Accra Chamber of Commerce" class="logo">
+                <span class="brand-text">
+                    <span class="brand-name">Accra Chamber</span>
+                    <span class="brand-sub">of Commerce</span>
+                </span>
+            </a>
+
+            <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="primaryNav">
+                ☰
+            </button>
+
+            <nav id="primaryNav" class="nav-menu" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <h1 class="page-title">Join the Chamber</h1>
+        <p class="lead">Apply to become a member of the Accra Chamber of Commerce.</p>
+
+        <section class="join-layout">
+            <!-- FORM -->
+            <form class="join-form" method="get" action="thankyou.html">
+                <label>
+                    First Name *
+                    <input type="text" name="first" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Last Name *
+                    <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="orgtitle" title="At least 7 characters; letters, spaces, and hyphens only"
+                        autocomplete="organization-title" pattern="^[A-Za-z][A-Za-z\s-]{6,}$"
+                        placeholder="e.g., Operations Manager">
+                </label>
+
+                <label>
+                    Email *
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                        placeholder="name@example.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone *
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business/Organization Name *
+                    <input type="text" name="business" title="Enter your business or organization name"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level *
+                    <select name="level" title="Select your membership level" required>
+                        <option value="" selected disabled>Select a membership level…</option>
+                        <option value="np">NP Membership (np)</option>
+                        <option value="bronze">Bronze Membership (bronze)</option>
+                        <option value="silver">Silver Membership (silver)</option>
+                        <option value="gold">Gold Membership (gold)</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business/Organization Description
+                    <textarea name="description" title="Describe your organization" rows="5"
+                        placeholder="Tell us about your organization…"></textarea>
+                </label>
+
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input class="submit-btn" type="submit" value="Submit Application">
+            </form>
+
+            
+            <aside class="membership-cards" aria-label="Membership level information">
+                <article class="level-card">
+                    <h2>NP Membership</h2>
+                    <p class="level-price">GHS 0 / year</p>
+                    <button type="button" class="modal-link" data-modal="modal-np">View benefits</button>
+                </article>
+
+                <article class="level-card">
+                    <h2>Bronze</h2>
+                    <p class="level-price">GHS 500 / year</p>
+                    <button type="button" class="modal-link" data-modal="modal-bronze">View benefits</button>
+                </article>
+
+                <article class="level-card">
+                    <h2>Silver</h2>
+                    <p class="level-price">GHS 1,200 / year</p>
+                    <button type="button" class="modal-link" data-modal="modal-silver">View benefits</button>
+                </article>
+
+                <article class="level-card">
+                    <h2>Gold</h2>
+                    <p class="level-price">GHS 2,500 / year</p>
+                    <button type="button" class="modal-link" data-modal="modal-gold">View benefits</button>
+                </article>
+            </aside>
+        </section>
+
+        
+        <dialog id="modal-np" class="modal">
+            <div class="modal-box">
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Directory listing</li>
+                    <li>Community announcements</li>
+                    <li>Selected training access</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze" class="modal">
+            <div class="modal-box">
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>Everything in NP</li>
+                    <li>Invitations to chamber events</li>
+                    <li>Business newsletter promotion</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver" class="modal">
+            <div class="modal-box">
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>Everything in Bronze</li>
+                    <li>Discounted event & training fees</li>
+                    <li>Eligible for homepage spotlight rotation</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold" class="modal">
+            <div class="modal-box">
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>Everything in Silver</li>
+                    <li>Priority spotlight placement</li>
+                    <li>Premium advertising opportunities</li>
+                    <li>VIP networking invitations</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+    </main>
+        
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <h2 class="footer-title">Accra Chamber of Commerce</h2>
+                <p>Accra, Greater Accra Region, Ghana</p>
+                <p>Email: info@accrachamber.org | Phone: +233 30 000 0000</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/Taft-Brigham" target="_blank" rel="noopener" aria-label="GitHub"><img
+                        src="images/github-brands-solid-full.svg" alt="GitHub profile"></a>
+                <a href="https://www.linkedin.com/in/ezraessien7733b4263/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><img src="images/linkedin-brands-solid-full.svg" alt="Linkedin profile"></a>
+                <a href="mailto:taftbrigham@gmail.com" target="_blank" rel="noopener" aria-label="Mail"><img
+                        src="images/envelope-regular-full.svg" alt="email address"></a>
+            </div>
+
+            <div class="dev-info">
+                <p>&copy; <span id="year"></span> Accra Chamber</p>
+                <p>Ezra Taft Brigham Essien | WDD 231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
