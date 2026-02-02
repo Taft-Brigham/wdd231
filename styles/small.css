@@ -1,10 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -200,6 +194,36 @@ main section {
     border-radius: 12px;
     font-size: 0.8rem;
     margin-top: 0.8rem;
+}
+.course-dialog h2 {
+    margin: .25rem 0 .75rem;
+    text-align: center;
+}
+
+.course-dialog .course-code {
+    display: inline-block;
+    padding: .35rem .75rem;
+    border-radius: 999px;
+    background: #2E7D32;
+    color: #111;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.course-dialog h3 {
+    margin: 0 0 .75rem;
+    text-align: center;
+}
+
+.course-dialog .close-modal {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: .45rem .65rem;
+    border: 1px solid rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
 }
 
 .filter-controls {
