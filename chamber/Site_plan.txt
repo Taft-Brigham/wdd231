@@ -70,6 +70,8 @@ Great for meeting the requirements needed for a commerce website
 7) Color Schema (Accessible Ghana Palette)
 Core Palette (Hex)
 These are theme-consistent and chosen for readable UI:
+Having a color palette helps for easy identification and branding of website 
+
 
 Primary (Forest Green): #0B3D2E
 Secondary (Gold): #F2C400
