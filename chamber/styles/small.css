@@ -684,6 +684,127 @@ dialog::backdrop {
 }
 
 /* -------Join and Thank You Page Styles End------ */
+
+
+/* -------------- DISCOVER PAGE -------------------- */
+.visit-message {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: .9rem 2.5rem .9rem 1rem;
+    margin: .9rem 0 1rem;
+}
+
+.visit-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    border: 1px solid var(--border);
+    background: #fff;
+    border-radius: 10px;
+    padding: .35rem .55rem;
+    cursor: pointer;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+
+    /* small: grid areas in one column */
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h";
+}
+
+.area-a {
+    grid-area: a;
+}
+
+.area-b {
+    grid-area: b;
+}
+
+.area-c {
+    grid-area: c;
+}
+
+.area-d {
+    grid-area: d;
+}
+
+.area-e {
+    grid-area: e;
+}
+
+.area-f {
+    grid-area: f;
+}
+
+.area-g {
+    grid-area: g;
+}
+
+.area-h {
+    grid-area: h;
+}
+
+.discover-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    font-family: var(--font-heading);
+    margin: 0 0 .6rem;
+    font-size: 1.1rem;
+}
+
+.discover-card figure {
+    margin: 0 0 .6rem;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: 600;
+    margin: .25rem 0 .35rem;
+}
+
+.learn-more {
+    margin-top: .6rem;
+    background: var(--primary);
+    color: var(--text-on-dark);
+    border: none;
+    border-radius: 999px;
+    padding: .6rem .9rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    filter: brightness(.95);
+}
+
+/* ------------------Discover page styles End------------- */
 .site-footer {
     margin-top: 2rem;
     background: var(--primary);

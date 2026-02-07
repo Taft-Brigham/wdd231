@@ -5,20 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Business Directory | Accra Chamber of Commerce</title>
-    <meta name="description"
-        content="Explore member businesses of the Accra Chamber of Commerce. Filter your view using grid or list layouts.">
+    <title>Discover Accra | Accra Chamber of Commerce</title>
+    <meta name="description" content="Discover Accra through key places of interest, facts, and highlights that support business, tourism, and community growth.">
     <meta name="author" content="Ezra Taft Brigham Essien">
 
 
     <link rel="icon" href="favicon.ico" />
 
 
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:description"
-        content="Supporting local businesses and community growth by connecting entrepreneurs, services, and opportunities within our Chamber.">
+    <meta property="og:title" content="Discover Accra | Accra Chamber of Commerce">
+    <meta property="og:description" content="Explore places of interest, culture, and business highlights in Accra, Ghana.">
     <meta property="og:image" content="https://taft-brigham.github.io/wdd231/chamber/images/chamber-logo.webp">
-    <meta property="og:url" content="https://taft-brigham.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://taft-brigham.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
 
@@ -38,8 +36,9 @@
 
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/wayfinder.js"></script>
-    <script defer src="scripts/directory.js"></script>
     <script defer src="scripts/getdate.js"></script>
+
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -47,7 +46,7 @@
 
     <header class="site-header">
         <div class="header-inner">
-            <a class="brand" href="directory.html" aria-label="Accra Chamber of Commerce directory">
+            <a class="brand" href="discover.html" aria-label="Accra Chamber of Commerce discover page">
                 <img src="images/logo-removebg.png" alt="Accra Chamber of Commerce" class="logo">
                 <span class="brand-text">
                     <span class="brand-name">Accra Chamber</span>
@@ -71,7 +70,21 @@
         </div>
     </header>
 
+    <main id="main">
+        <h1 class="page-title">Discover Accra</h1>
+        <p class="lead">
+            Explore places of interest, culture, and business highlights across Accra, Ghana.
+        </p>
     
+        <section class="visit-message" aria-live="polite">
+            <p id="visitText"></p>
+            <button id="closeVisit" class="visit-close" type="button" aria-label="Close message">✕</button>
+        </section>
+    
+        
+        <section id="discoverGrid" class="discover-grid" aria-label="Places of interest in Accra">
+        </section>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-inner">
