@@ -1,0 +1,499 @@
+/* =========================================
+   ADNOW - SELLERS PAGE STYLES
+   Styles specific to sellers.html
+   ========================================= */
+
+/* ===== BENEFITS SECTION ===== */
+.benefits {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+    background-color: var(--surface-white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 576px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.benefit-card {
+    background-color: var(--bg-light-gray);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+    background-color: var(--surface-white);
+    border-color: var(--secondary-green);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.benefit-card h3 {
+    color: var(--heading-navy);
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefit-card p {
+    color: var(--body-slate);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* ===== PRICING SECTION ===== */
+.pricing {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+    background-color: var(--bg-light-gray);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+}
+
+.pricing-card {
+    background-color: var(--surface-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid var(--border-soft-gray);
+    transition: all var(--transition-normal);
+}
+
+.pricing-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.featured {
+    border-color: var(--primary-blue);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+    .pricing-card.featured {
+        transform: scale(1.05);
+    }
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-blue);
+    color: var(--surface-white);
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+}
+
+.pricing-header {
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-soft-gray);
+}
+
+.pricing-header h3 {
+    color: var(--heading-navy);
+    margin-bottom: var(--spacing-xs);
+}
+
+.price {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0;
+}
+
+.duration {
+    color: var(--body-slate);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.pricing-features {
+    list-style: none;
+    margin: 0 0 var(--spacing-lg) 0;
+    padding: 0;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.pricing-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--body-slate);
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border-soft-gray);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card .btn {
+    width: 100%;
+}
+
+/* ===== REGISTRATION SECTION ===== */
+.registration {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+    background-color: var(--surface-white);
+}
+
+.seller-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bg-light-gray);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+    margin-bottom: var(--spacing-lg);
+    padding: 0;
+}
+
+legend {
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--primary-blue);
+    width: 100%;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 576px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: var(--heading-navy);
+    margin-bottom: var(--spacing-xs);
+}
+
+.required {
+    color: var(--error-red);
+}
+
+/* Inputs */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    border: 2px solid var(--border-soft-gray);
+    border-radius: var(--radius-md);
+    background-color: var(--surface-white);
+    color: var(--heading-navy);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(10, 102, 255, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--body-slate);
+}
+
+.form-group small {
+    display: block;
+    color: var(--body-slate);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--body-slate);
+    margin-top: 0.25rem;
+}
+
+/* Radio Buttons */
+.radio-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background-color: var(--surface-white);
+    border: 2px solid var(--border-soft-gray);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.radio-label:hover {
+    border-color: var(--primary-blue);
+}
+
+.radio-label input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-soft-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all var(--transition-fast);
+}
+
+.radio-custom::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform var(--transition-fast);
+}
+
+.radio-label input[type="radio"]:checked+.radio-custom {
+    border-color: var(--primary-blue);
+}
+
+.radio-label input[type="radio"]:checked+.radio-custom::after {
+    transform: scale(1);
+}
+
+.radio-label input[type="radio"]:checked~.radio-text {
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-soft-gray);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: all var(--transition-fast);
+}
+
+.checkbox-custom::after {
+    content: '✓';
+    color: var(--surface-white);
+    font-size: 0.8rem;
+    font-weight: 700;
+    transform: scale(0);
+    transition: transform var(--transition-fast);
+}
+
+.checkbox-label input[type="checkbox"]:checked+.checkbox-custom {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.checkbox-label input[type="checkbox"]:checked+.checkbox-custom::after {
+    transform: scale(1);
+}
+
+.checkbox-text {
+    font-size: 0.95rem;
+    color: var(--body-slate);
+    line-height: 1.5;
+}
+
+.checkbox-text a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 576px) {
+    .form-actions {
+        flex-direction: row;
+    }
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+/* Form Validation Styles */
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+    border-color: var(--error-red);
+}
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group textarea:valid:not(:placeholder-shown) {
+    border-color: var(--secondary-green);
+}
+
+/* ===== FAQ SECTION ===== */
+.faq {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+    background-color: var(--bg-light-gray);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--surface-white);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid var(--border-soft-gray);
+    overflow: hidden;
+}
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--heading-navy);
+    cursor: pointer;
+    list-style: none;
+    transition: background-color var(--transition-fast);
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    transition: transform var(--transition-normal);
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq-item summary:hover {
+    background-color: var(--bg-light-gray);
+}
+
+.faq-item p {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    color: var(--body-slate);
+    line-height: 1.7;
+    margin: 0;
+}

@@ -1,0 +1,39 @@
+AdNow Brand Style Guide
+1. Full UI Color System (Trust-Driven Blue & Green)
+
+
+Role Color Name Hex Code
+Primary Trust Blue #0A66FF
+Secondary Success Green #10B981
+Headings Dark Navy #0F172A
+Body Text Slate Gray #475569
+Background Light Gray #F8FAFC
+Surface/Card White #FFFFFF
+Borders Soft Gray #E2E8F0
+CTA Hover Deep Blue #084BDB
+Buttons, Alerts, Badges, and Tags
+Primary Button: Blue background with white text.
+Secondary Button: Green background with white text.
+Success Alert: Green background with dark text.
+Error Alert: Red-toned background for warnings.
+Verified Badge: Green icon or label indicating trusted seller.
+Feature Tag: Blue label highlighting promoted sellers or products.
+
+
+2. Typography Pairing
+Headings Font: Poppins – modern, geometric, strong presence.
+Body Font: Inter – clean, readable for interfaces.
+Fallback Fonts: Arial, Helvetica, sans-serif.
+Hierarchy:
+H1 – Bold, large for hero titles.
+H2 – Section headings.
+Body – Standard paragraph text for readability.
+
+
+3. Homepage Wireframe Overview
+Header: Logo on the left, navigation links on the right, primary CTA button.
+Hero Section: Bold headline, short description, search bar, and featured CTA.
+Featured Sellers: Grid layout displaying verified sellers with badges.
+Product Highlights: Cards with images, prices, and contact buttons.
+Trust Section: Explanation of seller verification and safety.
+Footer: Links, social media, and contact information.

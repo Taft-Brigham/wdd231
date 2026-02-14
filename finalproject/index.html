@@ -4,378 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <meta name="description"
-        content="Site plan for AdNow - a marketplace platform connecting vetted sellers with consumers">
+        content="AdNow connects you with verified sellers in Ghana. Search, browse, and contact trusted sellers directly via WhatsApp, Instagram, or Snapchat.">
     <meta name="author" content="Your Name">
-    <title>AdNow | Site Plan</title>
+    <meta name="keywords" content="marketplace, sellers, Ghana, buy, sell, WhatsApp, Instagram, verified sellers">
+
+ 
+    <meta property="og:title" content="AdNow - Find Trusted Sellers Now">
+    <meta property="og:description"
+        content="Connect with verified sellers in Ghana. Search products, browse categories, and contact sellers directly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/final/">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/final/images/og-image.jpg">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AdNow - Find Trusted Sellers Now">
+    <meta name="twitter:description" content="Connect with verified sellers in Ghana.">
+
+   
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
+
+   
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
+    <title>AdNow | Find Trusted Sellers Now</title>
 </head>
 
 <body>
-    <header>
-        <h1>AdNow</h1>
-        <p class="tagline">Site Plan Document</p>
+    
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">
+                    <span class="ad">Ad</span><span class="now">Now</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="sellers.html" class="nav-link">For Sellers</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    
     <main>
+      
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Trusted Sellers <span class="highlight">Now</span></h1>
+                <p class="hero-subtitle">Connect with verified sellers across Ghana. Search products, browse
+                    categories, and contact sellers directly via WhatsApp, Instagram, or Snapchat.</p>
+
+               
+                <form id="search-form" class="search-form">
+                    <div class="search-wrapper">
+                        <input type="search" id="search-input" name="search" placeholder="What are you looking for?"
+                            aria-label="Search products or sellers">
+                        <select id="category-filter" name="category" aria-label="Filter by category">
+                            <option value="">All Categories</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         
-        <section id="site-name">
-            <h2>Site Name</h2>
-            <p class="name-display">AdNow</p>
-            <h3>Why This Name?</h3>
-            <ul>
-                <li><strong>"Ad"</strong> - Represents advertising and advertisements, the core function of the platform
-                </li>
-                <li><strong>"Now"</strong> - Emphasizes instant access and immediate connection to sellers</li>
-                <li>The name is short, memorable, and easy to spell</li>
-                <li>It clearly communicates the platform's purpose: advertising products right now</li>
-                <li>Domain-friendly and brandable</li>
-            </ul>
-            <p><strong>Potential Domain:</strong> adnow.com, adnow.gh, getadnow.com</p>
+        <section class="featured-sellers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Sellers</h2>
+                    <p>Trusted and verified sellers ready to serve you</p>
+                </div>
+
+                <div id="featured-sellers-grid" class="sellers-grid">
+                    
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Loading sellers...</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
        
-        <section id="site-purpose">
-            <h2>Site Purpose</h2>
-            <p>AdNow is a marketplace advertising platform designed to bridge the gap between trusted sellers and
-                consumers. The platform serves two primary audiences:</p>
-
-            <div class="purpose-cards">
-                <div class="purpose-card">
-                    <h3>For Consumers</h3>
-                    <ul>
-                        <li>Search and filter products easily</li>
-                        <li>Find verified and vetted sellers</li>
-                        <li>Access direct contact information (WhatsApp, Instagram, Snapchat)</li>
-                        <li>Browse featured sellers for quick discovery</li>
-                        <li>View seller profiles with product images, videos, and rate cards</li>
-                    </ul>
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Three simple steps to find what you need</p>
                 </div>
 
-                <div class="purpose-card">
-                    <h3>For Sellers</h3>
-                    <ul>
-                        <li>Create professional seller profiles</li>
-                        <li>Showcase products with images and videos</li>
-                        <li>Connect directly with potential customers</li>
-                        <li>Get featured placement for increased visibility</li>
-                        <li>Build trust through platform verification</li>
-                    </ul>
+                <div class="steps-grid">
+                    <article class="step">
+                        <div class="step-icon">🔍</div>
+                        <h3>1. Search</h3>
+                        <p>Use our search bar to find products or browse categories to discover sellers.</p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-icon">👀</div>
+                        <h3>2. Browse</h3>
+                        <p>View seller profiles, check their products, ratings, and verification status.</p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-icon">💬</div>
+                        <h3>3. Contact</h3>
+                        <p>Reach out directly via WhatsApp, Instagram, or Snapchat to make your purchase.</p>
+                    </article>
                 </div>
-            </div>
-
-            <p><strong>Core Value Proposition:</strong> AdNow provides a trusted environment where only vetted and
-                approved sellers can advertise, ensuring consumers find reliable products and services quickly.</p>
-        </section>
-
-        
-        <section id="scenarios">
-            <h2>Scenarios</h2>
-            <p>These scenarios represent questions that our target audience might ask when visiting AdNow:</p>
-
-            <div class="scenario-list">
-                <article class="scenario">
-                    <h3>Scenario 1: Consumer Looking for Products</h3>
-                    <blockquote>
-                        "I want to buy affordable sneakers in Accra. How can I find trusted sellers who won't scam me,
-                        and how do I contact them directly?"
-                    </blockquote>
-                    <p><strong>How AdNow Answers:</strong> The search and filter functionality allows users to find
-                        sneaker sellers by location. Each seller profile displays verification badges, product images,
-                        and direct WhatsApp/Instagram contact links.</p>
-                </article>
-
-                <article class="scenario">
-                    <h3>Scenario 2: New Seller Wanting Exposure</h3>
-                    <blockquote>
-                        "I sell handmade jewelry on Instagram but I'm not getting enough customers. How can I reach more
-                        buyers and get my products seen by more people?"
-                    </blockquote>
-                    <p><strong>How AdNow Answers:</strong> The seller registration form allows new sellers to create
-                        profiles. The featured listing option provides premium placement on the homepage for maximum
-                        visibility.</p>
-                </article>
-
-                <article class="scenario">
-                    <h3>Scenario 3: Consumer Checking Seller Credibility</h3>
-                    <blockquote>
-                        "How do I know if a seller on this platform is legitimate and won't take my money without
-                        delivering?"
-                    </blockquote>
-                    <p><strong>How AdNow Answers:</strong> The About page explains the vetting process. Verified sellers
-                        display trust badges, and users can view seller ratings and product galleries before making
-                        contact.</p>
-                </article>
-
-                <article class="scenario">
-                    <h3>Scenario 4: Seller Wanting Premium Features</h3>
-                    <blockquote>
-                        "How much does it cost to get my business featured on the homepage, and how do I apply for a
-                        featured listing?"
-                    </blockquote>
-                    <p><strong>How AdNow Answers:</strong> The "For Sellers" page outlines featured listing packages
-                        with pricing, and includes a contact form to reach management for premium placement inquiries.
-                    </p>
-                </article>
             </div>
         </section>
 
-        
-        <section id="color-scheme">
-            <h2>Color Scheme</h2>
-            <p>The color palette is designed to convey trust, energy, and professionalism while maintaining visual
-                appeal.</p>
-
-            <div class="color-palette">
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #2563EB;"></div>
-                    <div class="color-info">
-                        <h3>Primary Blue</h3>
-                        <p><strong>Hex:</strong> #2563EB</p>
-                        <p><strong>Usage:</strong></p>
-                        <ul>
-                            <li>Primary buttons</li>
-                            <li>Navigation bar background</li>
-                            <li>Links</li>
-                            <li>Featured badges</li>
-                        </ul>
-                    </div>
+       
+        <section class="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Browse by Category</h2>
+                    <p>Explore sellers by product category</p>
                 </div>
 
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #1E40AF;"></div>
-                    <div class="color-info">
-                        <h3>Dark Blue</h3>
-                        <p><strong>Hex:</strong> #1E40AF</p>
-                        <p><strong>Usage:</strong></p>
-                        <ul>
-                            <li>Button hover states</li>
-                            <li>Footer background</li>
-                            <li>Active navigation states</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #F97316;"></div>
-                    <div class="color-info">
-                        <h3>Accent Orange</h3>
-                        <p><strong>Hex:</strong> #F97316</p>
-                        <p><strong>Usage:</strong></p>
-                        <ul>
-                            <li>Call-to-action highlights</li>
-                            <li>Featured seller badges</li>
-                            <li>Important notifications</li>
-                            <li>Hover accents</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #F8FAFC;"></div>
-                    <div class="color-info">
-                        <h3>Light Background</h3>
-                        <p><strong>Hex:</strong> #F8FAFC</p>
-                        <p><strong>Usage:</strong></p>
-                        <ul>
-                            <li>Page backgrounds</li>
-                            <li>Card backgrounds</li>
-                            <li>Section alternates</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #1F2937;"></div>
-                    <div class="color-info">
-                        <h3>Dark Text</h3>
-                        <p><strong>Hex:</strong> #1F2937</p>
-                        <p><strong>Usage:</strong></p>
-                        <ul>
-                            <li>Headings</li>
-                            <li>Body text</li>
-                            <li>Important content</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #6B7280;"></div>
-                    <div class="color-info">
-                        <h3>Secondary Text</h3>
-                        <p><strong>Hex:</strong> #6B7280</p>
-                        <p><strong>Usage:</strong></p>
-                        <ul>
-                            <li>Subtitles</li>
-                            <li>Meta information</li>
-                            <li>Placeholder text</li>
-                        </ul>
-                    </div>
+                <div id="categories-grid" class="categories-grid">
+                  
                 </div>
             </div>
         </section>
 
         
-        <section id="typography">
-            <h2>Typography</h2>
-            <p>The font selections prioritize readability, modern aesthetics, and professional appearance.</p>
-
-            <div class="font-showcase">
-                <div class="font-card">
-                    <h3>Primary Font: Poppins</h3>
-                    <p class="font-sample poppins">
-                        <span class="weight-700">Poppins Bold (700)</span><br>
-                        <span class="weight-600">Poppins SemiBold (600)</span><br>
-                        <span class="weight-400">Poppins Regular (400)</span>
-                    </p>
-                    <p><strong>Usage:</strong></p>
-                    <ul>
-                        <li>All headings (h1, h2, h3, h4, h5, h6)</li>
-                        <li>Navigation links</li>
-                        <li>Buttons</li>
-                        <li>Logo text</li>
-                    </ul>
-                    <p><strong>Why Poppins?</strong> Geometric sans-serif with friendly, modern appearance. Excellent
-                        readability at all sizes and conveys professionalism.</p>
+        <section class="all-sellers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>All Sellers</h2>
+                    <p>Browse our complete directory of verified sellers</p>
+                    <div class="filter-controls">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select" aria-label="Sort sellers">
+                            <option value="name">Name (A-Z)</option>
+                            <option value="rating">Rating (High to Low)</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="font-card">
-                    <h3>Secondary Font: Open Sans</h3>
-                    <p class="font-sample opensans">
-                        <span class="weight-500">Open Sans Medium (500)</span><br>
-                        <span class="weight-400">Open Sans Regular (400)</span>
-                    </p>
-                    <p><strong>Usage:</strong></p>
-                    <ul>
-                        <li>Body paragraphs</li>
-                        <li>Form labels and inputs</li>
-                        <li>Card descriptions</li>
-                        <li>Footer content</li>
-                    </ul>
-                    <p><strong>Why Open Sans?</strong> Highly legible humanist sans-serif optimized for screen reading.
-                        Pairs excellently with Poppins.</p>
+                <div id="all-sellers-grid" class="sellers-grid">
+                 
                 </div>
-            </div>
-
-            <div class="type-examples">
-                <h3>Typography Examples</h3>
-                <h1 class="example-h1">Heading 1 - Poppins Bold 2.5rem</h1>
-                <h2 class="example-h2">Heading 2 - Poppins SemiBold 2rem</h2>
-                <h3 class="example-h3">Heading 3 - Poppins SemiBold 1.5rem</h3>
-                <p class="example-body">Body Text - Open Sans Regular 1rem. This is how regular paragraph text will
-                    appear throughout the website. The line height is set to 1.6 for optimal readability.</p>
-                <p class="example-small">Small/Meta Text - Open Sans Regular 0.875rem</p>
             </div>
         </section>
 
-        
-        <section id="wireframe">
-            <h2>Wireframe</h2>
-            <p>The following wireframes illustrate the planned layout for the AdNow homepage in both mobile and desktop
-                views.</p>
-
-            <div class="wireframe-container">
-                <div class="wireframe-mobile">
-                    <h3>Mobile View (320px - 768px)</h3>
-                    <div class="wireframe-sketch mobile">
-                        <div class="wf-header">
-                            <div class="wf-logo">LOGO</div>
-                            <div class="wf-hamburger">☰</div>
-                        </div>
-                        <div class="wf-hero">
-                            <div class="wf-text-block">HERO HEADLINE</div>
-                            <div class="wf-text-small">Tagline text</div>
-                            <div class="wf-search-bar">SEARCH BAR</div>
-                        </div>
-                        <div class="wf-section">
-                            <div class="wf-section-title">FEATURED SELLERS</div>
-                            <div class="wf-card">SELLER CARD 1</div>
-                            <div class="wf-card">SELLER CARD 2</div>
-                            <div class="wf-card">SELLER CARD 3</div>
-                        </div>
-                        <div class="wf-section">
-                            <div class="wf-section-title">HOW IT WORKS</div>
-                            <div class="wf-step">STEP 1</div>
-                            <div class="wf-step">STEP 2</div>
-                            <div class="wf-step">STEP 3</div>
-                        </div>
-                        <div class="wf-section">
-                            <div class="wf-section-title">CATEGORIES</div>
-                            <div class="wf-category-grid">
-                                <div class="wf-cat">CAT</div>
-                                <div class="wf-cat">CAT</div>
-                                <div class="wf-cat">CAT</div>
-                                <div class="wf-cat">CAT</div>
-                            </div>
-                        </div>
-                        <div class="wf-footer">
-                            <div class="wf-text-small">FOOTER CONTENT</div>
-                            <div class="wf-text-small">LINKS | VIDEO | ATTRIBUTION</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wireframe-desktop">
-                    <h3>Desktop View (769px+)</h3>
-                    <div class="wireframe-sketch desktop">
-                        <div class="wf-header-desktop">
-                            <div class="wf-logo">LOGO</div>
-                            <div class="wf-nav-links">HOME | ABOUT | SELLERS</div>
-                        </div>
-                        <div class="wf-hero-desktop">
-                            <div class="wf-hero-content">
-                                <div class="wf-text-block">HERO HEADLINE</div>
-                                <div class="wf-text-small">Tagline and description text</div>
-                                <div class="wf-search-bar-wide">SEARCH BAR WITH FILTERS</div>
-                            </div>
-                        </div>
-                        <div class="wf-section-desktop">
-                            <div class="wf-section-title">FEATURED SELLERS</div>
-                            <div class="wf-cards-row">
-                                <div class="wf-card-desktop">SELLER 1</div>
-                                <div class="wf-card-desktop">SELLER 2</div>
-                                <div class="wf-card-desktop">SELLER 3</div>
-                                <div class="wf-card-desktop">SELLER 4</div>
-                            </div>
-                        </div>
-                        <div class="wf-section-desktop">
-                            <div class="wf-section-title">HOW IT WORKS</div>
-                            <div class="wf-steps-row">
-                                <div class="wf-step-desktop">STEP 1</div>
-                                <div class="wf-step-desktop">STEP 2</div>
-                                <div class="wf-step-desktop">STEP 3</div>
-                            </div>
-                        </div>
-                        <div class="wf-section-desktop">
-                            <div class="wf-section-title">BROWSE BY CATEGORY</div>
-                            <div class="wf-category-row">
-                                <div class="wf-cat-desktop">ELECTRONICS</div>
-                                <div class="wf-cat-desktop">FASHION</div>
-                                <div class="wf-cat-desktop">FOOD</div>
-                                <div class="wf-cat-desktop">SERVICES</div>
-                                <div class="wf-cat-desktop">MORE</div>
-                            </div>
-                        </div>
-                        <div class="wf-footer-desktop">
-                            <div class="wf-footer-col">ABOUT</div>
-                            <div class="wf-footer-col">LINKS</div>
-                            <div class="wf-footer-col">CONTACT</div>
-                            <div class="wf-footer-col">VIDEO LINK</div>
-                        </div>
-                    </div>
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Sell on AdNow?</h2>
+                    <p>Join our community of trusted sellers and reach thousands of potential customers.</p>
+                    <a href="sellers.html" class="btn btn-secondary">Become a Seller</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 AdNow Site Plan | Ezra Taft Brigham Essien</p>
+
+    <div id="seller-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body">
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-text">AdNow</span>
+                <p>Connecting buyers with trusted sellers across Ghana.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="sellers.html">For Sellers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: info@adnow.com</li>
+                    <li>WhatsApp: +234 800 123 4567</li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> AdNow. All rights reserved.</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+            <nav class="footer-nav">
+                <a href="attributions.html">Attributions</a>
+                <span>|</span>
+                <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">Video Demo</a>
+            </nav>
+        </div>
     </footer>
+
+   
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>
