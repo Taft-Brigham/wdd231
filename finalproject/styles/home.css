@@ -108,6 +108,7 @@
     overflow: hidden;
     transition: all var(--transition-base);
     cursor: pointer;
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 .seller-card:hover {
@@ -454,6 +455,3 @@
     }
 }
 
-.seller-card {
-    animation: fadeInUp 0.5s ease forwards;
-}
