@@ -7,96 +7,88 @@
     <meta name="description" content="Thank you for your submission to AdNow">
     <meta name="author" content="Your Name">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/navigation.css">
 
     <title>Application Submitted | AdNow</title>
 
     <style>
-        .success-page {
+        .success-section {
             min-height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: var(--space-lg);
         }
 
-        .success-container {
+        .success-card {
             max-width: 700px;
-            background-color: var(--surface-white);
-            border-radius: 12px;
-            padding: 3rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-surface);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-lg);
             text-align: center;
         }
 
         .success-icon {
             font-size: 5rem;
-            margin-bottom: 1rem;
+            margin-bottom: var(--space-md);
         }
 
-        .success-container h1 {
-            color: var(--secondary-green);
-            margin-bottom: 1rem;
+        .success-card h1 {
+            color: var(--color-accent);
+            margin-bottom: var(--space-sm);
         }
 
-        .success-container p {
-            color: var(--body-slate);
-            margin-bottom: 1.5rem;
-        }
-
-        .submission-details {
+        .submission-summary {
             text-align: left;
-            background-color: var(--bg-light-gray);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
+            background-color: var(--color-bg);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            margin: var(--space-lg) 0;
         }
 
-        .submission-details h2 {
-            color: var(--heading-navy);
+        .submission-summary h2 {
+            color: var(--color-heading);
             font-size: 1.25rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--primary-blue);
-            padding-bottom: 0.5rem;
+            margin-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: var(--space-xs);
         }
 
-        .detail-item {
+        .summary-row {
             display: flex;
             padding: 0.75rem 0;
-            border-bottom: 1px solid var(--border-soft-gray);
+            border-bottom: 1px solid var(--color-border);
         }
 
-        .detail-item:last-child {
+        .summary-row:last-child {
             border-bottom: none;
         }
 
-        .detail-label {
+        .summary-label {
             font-weight: 600;
-            color: var(--heading-navy);
+            color: var(--color-heading);
             min-width: 150px;
         }
 
-        .detail-value {
-            color: var(--body-slate);
+        .summary-value {
+            color: var(--color-body);
         }
 
-        .btn-group {
+        .success-actions {
             display: flex;
-            gap: 1rem;
+            gap: var(--space-sm);
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: var(--space-lg);
             flex-wrap: wrap;
         }
     </style>
@@ -105,34 +97,34 @@
 <body>
     <!-- ===== HEADER ===== -->
     <header class="site-header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <span class="logo-text">AdNow</span>
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="AdNow" class="logo-img" width="120" height="40">
             </a>
 
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="hamburger"></span>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="menu-icon"></span>
             </button>
 
-            <nav class="main-nav" id="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="sellers.html" class="nav-link">For Sellers</a></li>
+            <nav class="primary-nav" id="primary-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="sellers.html" class="nav-item">For Sellers</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main class="success-page">
-        <div class="success-container">
+    <main class="success-section">
+        <div class="success-card">
             <div class="success-icon">✅</div>
             <h1>Application Submitted!</h1>
             <p>Thank you for applying to become a seller on AdNow. We've received your application and will review it
                 within 2-3 business days.</p>
 
-            <div class="submission-details">
+            <div class="submission-summary">
                 <h2>Your Submission Details</h2>
                 <div id="form-data">
                     <!-- Populated by JavaScript -->
@@ -141,23 +133,23 @@
 
             <p>We'll contact you at the email address provided once your application has been reviewed.</p>
 
-            <div class="btn-group">
-                <a href="index.html" class="btn btn-primary">Back to Home</a>
-                <a href="sellers.html" class="btn btn-outline">Submit Another</a>
+            <div class="success-actions">
+                <a href="index.html" class="cta-button cta-primary">Back to Home</a>
+                <a href="sellers.html" class="cta-button cta-outline">Submit Another</a>
             </div>
         </div>
     </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
-        <div class="footer-container">
+        <div class="footer-inner">
             <div class="footer-brand">
-                <span class="logo-text">AdNow</span>
-                <p>Connecting buyers with trusted sellers across Nigeria.</p>
+                <img src="images/logo-white.png" alt="AdNow" class="footer-logo-img" width="100" height="33">
+                <p>Connecting buyers with trusted sellers across Ghana.</p>
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-legal">
             <p>&copy; <span id="current-year"></span> AdNow. All rights reserved.</p>
         </div>
     </footer>
@@ -165,16 +157,13 @@
     <script type="module">
         import { initNavigation } from './scripts/navigation.js';
 
-        // Initialize navigation
         initNavigation();
 
-        // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Parse URL parameters and display form data
         function displayFormData() {
             const params = new URLSearchParams(window.location.search);
-            const formDataContainer = document.getElementById('form-data');
+            const formDataDiv = document.getElementById('form-data');
 
             const fieldLabels = {
                 businessName: 'Business Name',
@@ -197,35 +186,29 @@
                 if (value && fieldLabels[key]) {
                     let displayValue = value;
 
-                    // Format timestamp
                     if (key === 'timestamp') {
                         displayValue = new Date(value).toLocaleString();
                     }
 
-                    // Format package name
                     if (key === 'package') {
                         const packageNames = {
                             basic: 'Basic Listing (Free)',
-                            featured: 'Featured Seller (₦5,000/month)',
-                            premium: 'Premium Partner (₦15,000/month)'
+                            featured: 'Featured Seller (GH₵ 50/month)',
+                            premium: 'Premium Partner (GH₵ 150/month)'
                         };
                         displayValue = packageNames[value] || value;
                     }
 
                     html += `
-            <div class="detail-item">
-              <span class="detail-label">${fieldLabels[key]}:</span>
-              <span class="detail-value">${displayValue}</span>
+            <div class="summary-row">
+              <span class="summary-label">${fieldLabels[key]}:</span>
+              <span class="summary-value">${displayValue}</span>
             </div>
           `;
                 }
             }
 
-            if (html) {
-                formDataContainer.innerHTML = html;
-            } else {
-                formDataContainer.innerHTML = '<p>No form data found.</p>';
-            }
+            formDataDiv.innerHTML = html || '<p>No form data found.</p>';
         }
 
         displayFormData();

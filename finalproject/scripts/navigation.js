@@ -1,122 +1,53 @@
-/* =========================================
-   ADNOW - NAVIGATION MODULE
-   Handles responsive navigation functionality
-   ========================================= */
-
-/**
- * Initialize navigation functionality
- */
 export function initNavigation() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const mainNav = document.getElementById('main-nav');
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('primary-nav');
   
-  if (!navToggle || !mainNav) return;
+  if (!toggle || !nav) return;
   
-  // Create overlay element
-  const overlay = document.createElement('div');
-  overlay.classList.add('nav-overlay');
-  document.body.appendChild(overlay);
+  const backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  backdrop.id = 'nav-backdrop';
+  document.body.appendChild(backdrop);
   
-  // Toggle navigation on hamburger click
-  navToggle.addEventListener('click', () => {
-    toggleNav(navToggle, mainNav, overlay);
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
   });
   
-  // Close navigation on overlay click
-  overlay.addEventListener('click', () => {
-    closeNav(navToggle, mainNav, overlay);
-  });
+  backdrop.addEventListener('click', closeMenu);
   
-  // Close navigation on escape key
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && mainNav.classList.contains('open')) {
-      closeNav(navToggle, mainNav, overlay);
+    if (e.key === 'Escape' && nav.classList.contains('is-active')) {
+      closeMenu();
     }
   });
   
-  // Close navigation on window resize (if larger than mobile breakpoint)
-  window.addEventListener('resize', debounce(() => {
-    if (window.innerWidth >= 768 && mainNav.classList.contains('open')) {
-      closeNav(navToggle, mainNav, overlay);
-    }
-  }, 150));
-  
-  // Handle nav link clicks (close menu on mobile)
-  const navLinks = mainNav.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
+  nav.querySelectorAll('.nav-item').forEach(link => {
     link.addEventListener('click', () => {
-      if (window.innerWidth < 768) {
-        closeNav(navToggle, mainNav, overlay);
-      }
+      if (window.innerWidth < 768) closeMenu();
     });
   });
-}
-
-/**
- * Toggle navigation open/closed state
- * @param {HTMLElement} toggle - Navigation toggle button
- * @param {HTMLElement} nav - Navigation element
- * @param {HTMLElement} overlay - Overlay element
- */
-function toggleNav(toggle, nav, overlay) {
-  const isOpen = nav.classList.contains('open');
   
-  if (isOpen) {
-    closeNav(toggle, nav, overlay);
-  } else {
-    openNav(toggle, nav, overlay);
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) closeMenu();
+  });
+  
+  function toggleMenu() {
+    const isOpen = nav.classList.contains('is-active');
+    isOpen ? closeMenu() : openMenu();
   }
-}
-
-/**
- * Open navigation
- * @param {HTMLElement} toggle - Navigation toggle button
- * @param {HTMLElement} nav - Navigation element
- * @param {HTMLElement} overlay - Overlay element
- */
-function openNav(toggle, nav, overlay) {
-  nav.classList.add('open');
-  overlay.classList.add('show');
-  toggle.setAttribute('aria-expanded', 'true');
-  document.body.style.overflow = 'hidden';
   
-  // Focus first nav link for accessibility
-  const firstLink = nav.querySelector('.nav-link');
-  if (firstLink) {
-    firstLink.focus();
+  function openMenu() {
+    nav.classList.add('is-active');
+    backdrop.classList.add('is-active');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
   }
-}
-
-/**
- * Close navigation
- * @param {HTMLElement} toggle - Navigation toggle button
- * @param {HTMLElement} nav - Navigation element
- * @param {HTMLElement} overlay - Overlay element
- */
-function closeNav(toggle, nav, overlay) {
-  nav.classList.remove('open');
-  overlay.classList.remove('show');
-  toggle.setAttribute('aria-expanded', 'false');
-  document.body.style.overflow = '';
   
-  // Return focus to toggle button
-  toggle.focus();
-}
-
-/**
- * Simple debounce function
- * @param {Function} func - Function to debounce
- * @param {number} wait - Wait time in milliseconds
- * @returns {Function} Debounced function
- */
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
+  function closeMenu() {
+    nav.classList.remove('is-active');
+    backdrop.classList.remove('is-active');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
 }

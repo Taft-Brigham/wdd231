@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Join AdNow as a verified seller. Reach thousands of customers, get featured placement, and grow your business with our trusted marketplace platform.">
+        content="Join AdNow as a verified seller. Reach thousands of customers in Ghana, get featured placement, and grow your business with our trusted marketplace.">
     <meta name="author" content="Your Name">
 
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Become a Seller | AdNow">
+    <meta property="og:title" content="Become a Seller on AdNow">
     <meta property="og:description"
-        content="Join AdNow's trusted marketplace and connect with thousands of potential customers.">
+        content="Join AdNow's trusted marketplace and connect with thousands of potential customers in Ghana.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourusername.github.io/wdd231/final/sellers.html">
+    <meta property="og:image" content="images/og-image.jpg">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/sellers.css">
@@ -38,20 +34,20 @@
 <body>
     <!-- ===== HEADER ===== -->
     <header class="site-header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <span class="logo-text">AdNow</span>
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="AdNow" class="logo-img" width="120" height="40">
             </a>
 
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="hamburger"></span>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="menu-icon"></span>
             </button>
 
-            <nav class="main-nav" id="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="sellers.html" class="nav-link active" aria-current="page">For Sellers</a></li>
+            <nav class="primary-nav" id="primary-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="sellers.html" class="nav-item current" aria-current="page">For Sellers</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,56 +55,68 @@
 
     <!-- ===== MAIN CONTENT ===== -->
     <main>
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="wrapper">
                 <h1>Become a Seller</h1>
                 <p>Join our trusted marketplace and grow your business</p>
             </div>
         </section>
 
         <!-- Benefits Section -->
-        <section class="benefits">
-            <div class="container">
-                <div class="section-header">
+        <section class="benefits-section">
+            <div class="wrapper">
+                <div class="section-intro">
                     <h2>Why Sell on AdNow?</h2>
                     <p>Unlock the potential of your business</p>
                 </div>
 
                 <div class="benefits-grid">
-                    <article class="benefit-card">
-                        <div class="benefit-icon">👥</div>
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/icon-users.svg" alt="" width="48" height="48" loading="lazy">
+                        </div>
                         <h3>Reach More Customers</h3>
                         <p>Get your products in front of thousands of active buyers looking for what you sell.</p>
                     </article>
 
-                    <article class="benefit-card">
-                        <div class="benefit-icon">✅</div>
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/icon-verified.svg" alt="" width="48" height="48" loading="lazy">
+                        </div>
                         <h3>Build Trust</h3>
                         <p>Our verification badge tells customers you're a legitimate, trustworthy seller.</p>
                     </article>
 
-                    <article class="benefit-card">
-                        <div class="benefit-icon">📱</div>
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/icon-mobile.svg" alt="" width="48" height="48" loading="lazy">
+                        </div>
                         <h3>Direct Communication</h3>
                         <p>Receive inquiries directly on WhatsApp, Instagram, or Snapchat - platforms you already use.
                         </p>
                     </article>
 
-                    <article class="benefit-card">
-                        <div class="benefit-icon">⭐</div>
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/icon-star.svg" alt="" width="48" height="48" loading="lazy">
+                        </div>
                         <h3>Featured Placement</h3>
                         <p>Get premium visibility on our homepage with featured seller packages.</p>
                     </article>
 
-                    <article class="benefit-card">
-                        <div class="benefit-icon">💰</div>
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/icon-money.svg" alt="" width="48" height="48" loading="lazy">
+                        </div>
                         <h3>No Commission</h3>
                         <p>We don't take a cut of your sales. Your earnings are 100% yours.</p>
                     </article>
 
-                    <article class="benefit-card">
-                        <div class="benefit-icon">📊</div>
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/icon-profile.svg" alt="" width="48" height="48" loading="lazy">
+                        </div>
                         <h3>Business Profile</h3>
                         <p>Showcase your products with images, videos, and detailed descriptions.</p>
                     </article>
@@ -117,91 +125,91 @@
         </section>
 
         <!-- Pricing Section -->
-        <section class="pricing">
-            <div class="container">
-                <div class="section-header">
+        <section class="pricing-section">
+            <div class="wrapper">
+                <div class="section-intro">
                     <h2>Advertising Packages</h2>
                     <p>Choose the plan that works for your business</p>
                 </div>
 
                 <div class="pricing-grid">
-                    <article class="pricing-card">
-                        <div class="pricing-header">
+                    <article class="price-card">
+                        <div class="price-header">
                             <h3>Basic Listing</h3>
-                            <p class="price">Free</p>
-                            <p class="duration">Forever</p>
+                            <p class="price-amount">Free</p>
+                            <p class="price-period">Forever</p>
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Business profile page</li>
-                            <li>✓ Up to 5 product images</li>
-                            <li>✓ Contact information display</li>
-                            <li>✓ Category listing</li>
-                            <li>✗ Featured placement</li>
-                            <li>✗ Priority support</li>
+                        <ul class="price-features">
+                            <li class="included">Business profile page</li>
+                            <li class="included">Up to 5 product images</li>
+                            <li class="included">Contact information display</li>
+                            <li class="included">Category listing</li>
+                            <li class="excluded">Featured placement</li>
+                            <li class="excluded">Priority support</li>
                         </ul>
-                        <a href="#registration-form" class="btn btn-outline">Get Started</a>
+                        <a href="#registration-form" class="cta-button cta-outline">Get Started</a>
                     </article>
 
-                    <article class="pricing-card featured">
-                        <div class="pricing-badge">Most Popular</div>
-                        <div class="pricing-header">
+                    <article class="price-card price-card-highlight">
+                        <div class="price-badge">Most Popular</div>
+                        <div class="price-header">
                             <h3>Featured Seller</h3>
-                            <p class="price">₵50</p>
-                            <p class="duration">Per Month</p>
+                            <p class="price-amount">GH₵ 50</p>
+                            <p class="price-period">Per Month</p>
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Everything in Basic</li>
-                            <li>✓ Up to 20 product images</li>
-                            <li>✓ Homepage featured section</li>
-                            <li>✓ Priority in search results</li>
-                            <li>✓ Featured badge on profile</li>
-                            <li>✓ Priority support</li>
+                        <ul class="price-features">
+                            <li class="included">Everything in Basic</li>
+                            <li class="included">Up to 20 product images</li>
+                            <li class="included">Homepage featured section</li>
+                            <li class="included">Priority in search results</li>
+                            <li class="included">Featured badge on profile</li>
+                            <li class="included">Priority support</li>
                         </ul>
-                        <a href="#registration-form" class="btn btn-primary">Get Started</a>
+                        <a href="#registration-form" class="cta-button cta-primary">Get Started</a>
                     </article>
 
-                    <article class="pricing-card">
-                        <div class="pricing-header">
+                    <article class="price-card">
+                        <div class="price-header">
                             <h3>Premium Partner</h3>
-                            <p class="price">₵150</p>
-                            <p class="duration">Per Month</p>
+                            <p class="price-amount">GH₵ 150</p>
+                            <p class="price-period">Per Month</p>
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Everything in Featured</li>
-                            <li>✓ Unlimited product images</li>
-                            <li>✓ Top homepage placement</li>
-                            <li>✓ Social media promotion</li>
-                            <li>✓ Dedicated account manager</li>
-                            <li>✓ Analytics dashboard</li>
+                        <ul class="price-features">
+                            <li class="included">Everything in Featured</li>
+                            <li class="included">Unlimited product images</li>
+                            <li class="included">Top homepage placement</li>
+                            <li class="included">Social media promotion</li>
+                            <li class="included">Dedicated account manager</li>
+                            <li class="included">Analytics dashboard</li>
                         </ul>
-                        <a href="#registration-form" class="btn btn-outline">Get Started</a>
+                        <a href="#registration-form" class="cta-button cta-outline">Get Started</a>
                     </article>
                 </div>
             </div>
         </section>
 
         <!-- Registration Form Section -->
-        <section class="registration" id="registration-form">
-            <div class="container">
-                <div class="section-header">
+        <section class="registration-section" id="registration-form">
+            <div class="wrapper">
+                <div class="section-intro">
                     <h2>Seller Registration</h2>
                     <p>Fill out the form below to apply as a seller on AdNow</p>
                 </div>
 
-                <form id="seller-registration-form" action="form-success.html" method="GET" class="seller-form">
+                <form id="seller-registration-form" action="form-success.html" method="GET" class="registration-form">
                     <!-- Business Information -->
                     <fieldset>
                         <legend>Business Information</legend>
 
-                        <div class="form-group">
-                            <label for="business-name">Business Name <span class="required">*</span></label>
+                        <div class="field">
+                            <label for="business-name">Business Name <span class="field-required">*</span></label>
                             <input type="text" id="business-name" name="businessName" required minlength="3"
                                 maxlength="50" placeholder="Enter your business name">
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="category">Business Category <span class="required">*</span></label>
+                        <div class="field-pair">
+                            <div class="field">
+                                <label for="category">Business Category <span class="field-required">*</span></label>
                                 <select id="category" name="category" required>
                                     <option value="">Select a category</option>
                                     <option value="Electronics">Electronics</option>
@@ -216,33 +224,36 @@
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label for="location">Business Location <span class="required">*</span></label>
+                            <div class="field">
+                                <label for="location">Business Location <span class="field-required">*</span></label>
                                 <input type="text" id="location" name="location" required list="locations-list"
                                     placeholder="e.g., Accra, Ghana">
                                 <datalist id="locations-list">
                                     <option value="Accra, Ghana">
                                     <option value="Kumasi, Ghana">
                                     <option value="Takoradi, Ghana">
-                                    <option value="Capecoast, Ghana">
-                                    <option value="Kasoa, Ghana">
-                                    <option value="Sunyani, Ghana">
+                                    <option value="Tamale, Ghana">
+                                    <option value="Cape Coast, Ghana">
                                     <option value="Tema, Ghana">
+                                    <option value="Koforidua, Ghana">
+                                    <option value="Sunyani, Ghana">
+                                    <option value="Ho, Ghana">
+                                    <option value="Wa, Ghana">
                                 </datalist>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="description">Business Description <span class="required">*</span></label>
+                        <div class="field">
+                            <label for="description">Business Description <span class="field-required">*</span></label>
                             <textarea id="description" name="description" required minlength="50" maxlength="500"
                                 rows="4"
                                 placeholder="Describe your business and what you sell (minimum 50 characters)"></textarea>
-                            <span class="char-count"><span id="desc-count">0</span>/500</span>
+                            <span class="field-counter"><span id="desc-count">0</span>/500</span>
                         </div>
 
-                        <div class="form-group">
+                        <div class="field">
                             <label for="products">Main Products (comma-separated) <span
-                                    class="required">*</span></label>
+                                    class="field-required">*</span></label>
                             <input type="text" id="products" name="products" required
                                 placeholder="e.g., Phones, Laptops, Accessories">
                         </div>
@@ -252,34 +263,34 @@
                     <fieldset>
                         <legend>Contact Information</legend>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="owner-name">Owner/Contact Name <span class="required">*</span></label>
+                        <div class="field-pair">
+                            <div class="field">
+                                <label for="owner-name">Owner/Contact Name <span class="field-required">*</span></label>
                                 <input type="text" id="owner-name" name="ownerName" required placeholder="Full name">
                             </div>
 
-                            <div class="form-group">
-                                <label for="email">Email Address <span class="required">*</span></label>
+                            <div class="field">
+                                <label for="email">Email Address <span class="field-required">*</span></label>
                                 <input type="email" id="email" name="email" required placeholder="you@example.com">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="whatsapp">WhatsApp Number <span class="required">*</span></label>
+                        <div class="field">
+                            <label for="whatsapp">WhatsApp Number <span class="field-required">*</span></label>
                             <input type="tel" id="whatsapp" name="whatsapp" required pattern="[+]?[0-9]{10,15}"
-                                placeholder="+233 594 909 356">
-                            <small>Include country code for international format</small>
+                                placeholder="+233 24 123 4567">
+                            <small class="field-hint">Include country code for international format</small>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
+                        <div class="field-pair">
+                            <div class="field">
                                 <label for="instagram">Instagram Handle</label>
                                 <input type="text" id="instagram" name="instagram" placeholder="@yourbusiness">
                             </div>
 
-                            <div class="form-group">
+                            <div class="field">
                                 <label for="snapchat">Snapchat Username</label>
-                                <input type="text" id="snapchat" name="snapchat" placeholder="@yourbusiness">
+                                <input type="text" id="snapchat" name="snapchat" placeholder="yourbusiness">
                             </div>
                         </div>
                     </fieldset>
@@ -288,62 +299,64 @@
                     <fieldset>
                         <legend>Package Selection</legend>
 
-                        <div class="form-group radio-group">
-                            <label>Select Your Package <span class="required">*</span></label>
-                            <div class="radio-options">
-                                <label class="radio-label">
+                        <div class="field">
+                            <label>Select Your Package <span class="field-required">*</span></label>
+                            <div class="radio-set">
+                                <label class="radio-option">
                                     <input type="radio" name="package" value="basic" required checked>
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-text">Basic Listing (Free)</span>
+                                    <span class="radio-indicator"></span>
+                                    <span class="radio-label">Basic Listing (Free)</span>
                                 </label>
 
-                                <label class="radio-label">
+                                <label class="radio-option">
                                     <input type="radio" name="package" value="featured">
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-text">Featured Seller (₵50/month)</span>
+                                    <span class="radio-indicator"></span>
+                                    <span class="radio-label">Featured Seller (GH₵ 50/month)</span>
                                 </label>
 
-                                <label class="radio-label">
+                                <label class="radio-option">
                                     <input type="radio" name="package" value="premium">
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-text">Premium Partner (₵150/month)</span>
+                                    <span class="radio-indicator"></span>
+                                    <span class="radio-label">Premium Partner (GH₵ 150/month)</span>
                                 </label>
                             </div>
                         </div>
 
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="terms" id="terms" required>
-                                <span class="checkbox-custom"></span>
-                                <span class="checkbox-text">I agree to the <a href="#" target="_blank">Terms of
-                                        Service</a> and <a href="#" target="_blank">Privacy Policy</a> <span
-                                        class="required">*</span></span>
-                            </label>
+                        <div class="field">
+                            <div class="checkbox-set">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <span class="checkbox-indicator"></span>
+                                    <span class="checkbox-label">I agree to the <a href="#" target="_blank">Terms of
+                                            Service</a> and <a href="#" target="_blank">Privacy Policy</a> <span
+                                            class="field-required">*</span></span>
+                                </label>
 
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="newsletter" id="newsletter">
-                                <span class="checkbox-custom"></span>
-                                <span class="checkbox-text">Subscribe to our newsletter for tips and updates</span>
-                            </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="newsletter" id="newsletter">
+                                    <span class="checkbox-indicator"></span>
+                                    <span class="checkbox-label">Subscribe to our newsletter for tips and updates</span>
+                                </label>
+                            </div>
                         </div>
                     </fieldset>
 
                     <!-- Hidden Fields -->
                     <input type="hidden" name="timestamp" id="timestamp">
 
-                    <!-- Submit Button -->
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary btn-large">Submit Application</button>
-                        <button type="reset" class="btn btn-outline">Clear Form</button>
+                    <!-- Submit -->
+                    <div class="form-submit">
+                        <button type="submit" class="cta-button cta-primary cta-large">Submit Application</button>
+                        <button type="reset" class="cta-button cta-outline">Clear Form</button>
                     </div>
                 </form>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq">
-            <div class="container">
-                <div class="section-header">
+        <section class="faq-section">
+            <div class="wrapper">
+                <div class="section-intro">
                     <h2>Frequently Asked Questions</h2>
                     <p>Common questions about selling on AdNow</p>
                 </div>
@@ -357,8 +370,9 @@
 
                     <details class="faq-item">
                         <summary>What documents do I need to provide?</summary>
-                        <p>For basic verification, you'll need a valid ID, business registration (if applicable), and
-                            photos of your products. Premium sellers may need additional documentation.</p>
+                        <p>For basic verification, you'll need a valid Ghana Card or Voter ID, business registration (if
+                            applicable), and photos of your products. Premium sellers may need additional documentation.
+                        </p>
                     </details>
 
                     <details class="faq-item">
@@ -370,7 +384,8 @@
                     <details class="faq-item">
                         <summary>How do I receive payment from customers?</summary>
                         <p>AdNow is a listing platform - all transactions happen directly between you and the customer.
-                            You handle your own payments through whatever method you prefer.</p>
+                            You handle your own payments through Mobile Money, bank transfer, or whatever method you
+                            prefer.</p>
                     </details>
 
                     <details class="faq-item">
@@ -385,13 +400,13 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
-        <div class="footer-container">
+        <div class="footer-inner">
             <div class="footer-brand">
-                <span class="logo-text">AdNow</span>
-                <p>Connecting buyers with trusted sellers across Nigeria.</p>
+                <img src="images/logo-white.png" alt="AdNow" class="footer-logo-img" width="100" height="33">
+                <p>Connecting buyers with trusted sellers across Ghana.</p>
             </div>
 
-            <div class="footer-links">
+            <div class="footer-nav">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -400,36 +415,41 @@
                 </ul>
             </div>
 
-            <div class="footer-contact">
+            <div class="footer-info">
                 <h3>Contact</h3>
                 <ul>
                     <li>Email: info@adnow.com</li>
-                    <li>WhatsApp: +234 800 123 4567</li>
+                    <li>WhatsApp: +233 24 123 4567</li>
                 </ul>
             </div>
 
             <div class="footer-social">
                 <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" aria-label="Instagram">📷</a>
-                    <a href="#" aria-label="Twitter">🐦</a>
-                    <a href="#" aria-label="Facebook">📘</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Instagram">
+                        <img src="images/icon-instagram.svg" alt="" width="24" height="24">
+                    </a>
+                    <a href="#" aria-label="Follow us on Twitter">
+                        <img src="images/icon-twitter.svg" alt="" width="24" height="24">
+                    </a>
+                    <a href="#" aria-label="Follow us on Facebook">
+                        <img src="images/icon-facebook.svg" alt="" width="24" height="24">
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-legal">
             <p>&copy; <span id="current-year"></span> AdNow. All rights reserved.</p>
             <p>Last modified: <span id="last-modified"></span></p>
-            <nav class="footer-nav">
+            <nav class="legal-links">
                 <a href="attributions.html">Attributions</a>
-                <span>|</span>
+                <span aria-hidden="true">|</span>
                 <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">Video Demo</a>
             </nav>
         </div>
     </footer>
 
-    <!-- JavaScript Modules -->
     <script type="module" src="scripts/main.js"></script>
     <script type="module" src="scripts/form.js"></script>
 </body>
